@@ -5,6 +5,7 @@ body {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -22,17 +23,21 @@ img {
     display: block;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
+
+.header {
+    border-bottom:  1px solid #e7e9fc;
 }
 
+.header-block {
+    display: flex;
+}
+
+
+
 .container { 
-    max-width: 1140px;
-    padding-left:  16px;  
-    padding-right: 16px ;
-    margin-left:  auto;
-    margin-right : auto;  
+    max-width: 1158px;
+   padding: 0 15px 0 15px; 
+   margin: 0 auto;
     }
 
 .logo {
@@ -42,14 +47,33 @@ header {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.54px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .header-logo {
     color: #2E2F42;
 }
 
+.nav {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+
+.address-menu {
+    display: flex;
+    gap: 40px;
+    margin-left: 332px;
+}
+
 .nav-link {
+    padding: 24px 0;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -234,6 +258,17 @@ text-align: center;
     gap: 24px;
 }
 
+.port-title {
+    color: #2e2f42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
 .portfolio-title {
     color: #2E2F42;
     font-size: 20px;
@@ -265,10 +300,10 @@ text-align: center;
 
 .footer-logo {
     color: #F4F4FD;
+    margin-bottom: 16px;
 }
 
 .footer-text {
-    margin-top: 18px;
     width: 264px;
     color: #F4F4FD;
     font-size: 16px;
